@@ -1,0 +1,13 @@
+<h1>There are {{wlist}} words</h1>
+
+<a href="{%url 'home'%}">Start Again</a>
+<h2>YOUR TEXT : </h2> <br>
+{{Text}}
+
+<h3>WORD COUNT</h3>
+
+{% for word , count in wd%}
+
+{{word}}--{{count}}<br>
+
+{%endfor%}
